@@ -16,6 +16,10 @@ public class BookingFlow {
 		HomePage home = new HomePage();
 		home.run();
 	}
+	
+	protected void FlightSelectionPageRun() {
+		// TODO on ajoutera la classe AVAI - a coder
+	}
 
 	protected void run() {
 		homePageRun();
