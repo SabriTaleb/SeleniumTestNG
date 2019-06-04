@@ -18,9 +18,11 @@ public class BookingFlow {
 		home.run();
 	}
 	
+
 	protected void flightSelection() {
 		FlightSelectionPage flightSelection = new FlightSelectionPage();
 		flightSelection.run();
+
 	}
 
 	protected void run() {
