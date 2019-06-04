@@ -19,8 +19,8 @@ public class TestBookingJAL1 extends BookingFlow{
 		MyDriver.quitDriver();
 	}
 	
-	@Override
-	protected void run() {
-		
-	}
+//	@Override
+//	protected void run() {
+//		
+//	}
 }

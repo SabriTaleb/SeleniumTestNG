@@ -8,6 +8,12 @@ public class HomePage extends AllPages {
 	
 	private static final String HOME_PAGE = "> HOME_PAGE > Checks > ";
 	private static final String EXPECTED_PAGE_TITLE = "JAPAN AIRLINES (JAL) - France Region - Airfare to Japan (Tokyo)";
+	private static final String DEPARTURE_CITY = "NCE";
+	private static final String ARRIVAL_CITY = "HND";
+	private static final String DEPARTURE_DATE_MONTH = "9";
+	private static final String DEPARTURE_DATE_DAY = "20";
+	private static final String ARRIVAL_DATE_MONTH = "9";
+	private static final String ARRIVAL_DATE_DAY = "30";
 	
 //	private pageName = 
 
@@ -31,8 +37,12 @@ public class HomePage extends AllPages {
 	public void performActions() {
 		System.out.println("On va faire les actions de la HomePage");
 		HomePageActions actions = new HomePageActions();
+		actions.closeModal();
+		actions.setDepartureCity(DEPARTURE_CITY);
+		actions.setArrivalCity(ARRIVAL_CITY);
+		actions.setDepartureDate(DEPARTURE_DATE_MONTH, DEPARTURE_DATE_DAY);
+		actions.setArrivalDate(ARRIVAL_DATE_MONTH, ARRIVAL_DATE_DAY);
 		actions.clickSearchButton();
-
 	}
 
 	public void performChecks() {

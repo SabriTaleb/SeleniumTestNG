@@ -1,6 +1,7 @@
 package tuto.eclipse.jal.selenium.loaders;
 
 import tuto.eclipse.jal.constants.JALConstants;
+import tuto.eclipse.jal.selenium.pageObjects.flightSelectionPage.FlightSelectionPage;
 import tuto.eclipse.jal.selenium.pageObjects.homePage.HomePage;
 
 public class BookingFlow {
@@ -17,11 +18,26 @@ public class BookingFlow {
 		home.run();
 	}
 	
-	protected void FlightSelectionPageRun() {
-		// TODO on ajoutera la classe AVAI - a coder
+
+	protected void flightSelection() {
+		FlightSelectionPage flightSelection = new FlightSelectionPage();
+		flightSelection.run();
+
 	}
 
 	protected void run() {
 		homePageRun();
+		pause(5);
+		flightSelection();
 	}
+	
+	
+	private void pause(int seconds) {
+		try {
+			Thread.sleep(seconds * 1000);
+		} catch (InterruptedException ex) {
+			Thread.currentThread().interrupt();
+		}
+	}
+	
 }

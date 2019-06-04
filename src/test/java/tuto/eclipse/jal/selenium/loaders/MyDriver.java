@@ -14,7 +14,7 @@ public class MyDriver {
 	private static final String EDGE = "edge";
 	private static final String PATH_FIREFOX_DRIVER = "C:\\GeckoDriver.exe";
 	private static final String PATH_EDGE_DRIVER = "C:\\edgedriver.exe";
-	private static final String PATH_CHROME_DRIVER = "C:\\Users\\formation\\Documents\\ChromeDrivers\\chromedriver.exe";
+	private static final String PATH_CHROME_DRIVER = "C:\\chromedriver.exe";
 	public static WebDriver driver;
 //	private final String defaultBrowser = "chrome";
 
@@ -80,7 +80,7 @@ public class MyDriver {
 		System.out.println("This is test is launched from: " + System.getProperty("user.dir"));
 		driver.manage().window().maximize();
 		// Implicit wait - used to set the default waiting time throughout the program
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
 
 	public static void closeDriver() {
