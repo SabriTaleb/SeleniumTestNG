@@ -16,7 +16,7 @@ import tuto.eclipse.jal.selenium.ng.pageObjects.AvaiPageNG;
 import tuto.eclipse.jal.selenium.ng.pageObjects.HomePageNG;
 
 public class TestBookingNG {
-	private static final String PATH_CHROME_DRIVER = "C:\\Users\\formation\\Documents\\ChromeDrivers\\chromedriver.exe";
+	private static final String PATH_CHROME_DRIVER = "C:\\chromedriver.exe";
 	private static final String HOME_PAGE = "> HOME_PAGE > Checks > ";
 	private static final String EXPECTED_PAGE_TITLE = "JAPAN AIRLINES (JAL) - France Region - Airfare to Japan (Tokyo)";
 	private static final String WRONG_EXPECTED_PAGE_TITLE = "JAPAN AIRLINES (JL) - France Region - Airfare to Japan (Tokyo)";
